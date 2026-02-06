@@ -2,6 +2,7 @@
 
 - 最新版入口：docs/index.html（GitHub Pages 会发布它）
 - 历史版本：docs/versions/
+- 项目背景与维护规则：AGENTS.md
 
 ## 发布到 GitHub Pages（同事无需 GitHub 账号）
 
@@ -32,4 +33,13 @@ git push -u origin main
 - 修改 docs/index.html
 - 在 docs/versions/ 里再存一份版本（可选）
 - git commit + git push
+
+## 自动发布（可选）
+
+在本机跑 watcher，保存 `docs/index.html` 后会自动 commit + push：
+
+```powershell
+cd "C:\Users\Administrator\Desktop\hk-pos-competitive-analysis"
+.\scripts\watch-publish.ps1
+```
 
