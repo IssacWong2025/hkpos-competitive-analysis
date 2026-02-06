@@ -47,6 +47,11 @@ th{background:#fbf7f2;position:sticky;top:0}
 .feature-table{font-size:12px;line-height:1.25}
 .feature-table th,.feature-table td{padding:8px 10px;min-width:110px}
 .feature-table td:first-child{min-width:190px;font-weight:600}
+/* Freeze the capability column when horizontally scrolling */
+.feature-table th:first-child,
+.feature-table td:first-child{position:sticky;left:0}
+.feature-table th:first-child{z-index:5}
+.feature-table td:first-child{z-index:2;background:#fff;box-shadow:6px 0 0 rgba(31,27,22,0.04)}
 .feature-table .cell{white-space:nowrap}
 .feature-table .cell a{display:inline-block;margin-left:6px}
 
@@ -153,7 +158,92 @@ th{background:#fbf7f2;position:sticky;top:0}
       <span>↑ 轻量点单</span>
       <span>全套运营 ↓</span>
     </div>
+  
+  <section>
+    <h2>补充信息渠道（公开）</h2>
+    <p class="note">除官网功能页/定价页外，以下渠道通常能补齐：功能细节、更新节奏、活动促销、客户案例线索（建议后续纳入 Sources 维护）。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>品牌</th>
+            <th>帮助中心/文档</th>
+            <th>社媒/活动</th>
+            <th>其它可用信源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GoTappo</td>
+            <td>
+              <a href="https://gotappo.canny.io/" target="_blank" rel="noopener">Canny（反馈/更新线索）</a>
+            </td>
+            <td>
+              <a href="https://www.facebook.com/profile.php?id=61566636965481" target="_blank" rel="noopener">Facebook</a>，
+              <a href="https://www.instagram.com/tappo_hk/" target="_blank" rel="noopener">Instagram</a>
+            </td>
+            <td>
+              <a href="https://www.gotappo.com/" target="_blank" rel="noopener">官网（入口）</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Eats365</td>
+            <td>
+              <a href="https://support.eats365pos.com/" target="_blank" rel="noopener">Support Center</a>
+            </td>
+            <td>
+              <a href="https://hk.linkedin.com/company/eats365" target="_blank" rel="noopener">LinkedIn</a>，
+              <a href="https://www.facebook.com/eats365pos/" target="_blank" rel="noopener">Facebook</a>，
+              <a href="https://twitter.com/eats365pos" target="_blank" rel="noopener">X/Twitter</a>
+            </td>
+            <td>
+              <a href="https://www.eats365pos.com/hk/" target="_blank" rel="noopener">官网（入口）</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ezPOS</td>
+            <td>
+              <a href="https://ezacademy.ezpos.com.hk/" target="_blank" rel="noopener">ezACADEMY</a>
+            </td>
+            <td>
+              <a href="https://www.facebook.com/ezpos.hk" target="_blank" rel="noopener">Facebook</a>，
+              <a href="https://www.instagram.com/ezpos.hk/" target="_blank" rel="noopener">Instagram</a>
+            </td>
+            <td>
+              <a href="https://www.ezpos.hk/" target="_blank" rel="noopener">官网（入口）</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ROKA</td>
+            <td>
+              （待补）
+            </td>
+            <td>
+              <a href="https://www.facebook.com/profile.php?id=100090895665833" target="_blank" rel="noopener">Facebook</a>，
+              <a href="https://www.instagram.com/emenuhk/" target="_blank" rel="noopener">Instagram</a>
+            </td>
+            <td>
+              <a href="https://www.roka.com.hk/" target="_blank" rel="noopener">官网（入口）</a>
+            </td>
+          </tr>
+          <tr>
+            <td>OmniWe</td>
+            <td>
+              <a href="https://omniwe.com/en-US/helpCenter/" target="_blank" rel="noopener">Help Center</a>
+            </td>
+            <td>
+              <a href="https://hk.linkedin.com/company/omniwe-limited" target="_blank" rel="noopener">LinkedIn</a>
+            </td>
+            <td>
+              <a href="https://omniwe.com/en-US/systemUpdate" target="_blank" rel="noopener">System Update</a>，
+              <a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">方案页</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
+</section>
 
   <section>
     <h2>执行摘要</h2>
@@ -489,10 +579,10 @@ th{background:#fbf7f2;position:sticky;top:0}
   </section>
 
   <section>
-    <h2>差距视图（拆分：Unknown vs Absent）</h2>
-    <p class="note">为了避免把“官网未写”误判为“产品没有”，这里将差距拆成两类：Unknown（缺公开证据）与 Absent（有明确证据表明缺失）。</p>
+    <h2>差距视图（以竞品证据补齐为主）</h2>
+    <p class="note">本区块用于补齐：当 GoTappo 对某能力未公开披露（或内部确认暂不支持）时，哪些竞品在公开渠道里有证据支持。后续你给我“内部确定不支持清单”后，我会把清单直接映射到这里并补全竞品证据。</p>
 
-    <h3 style="margin:10px 0 8px;font-size:16px;color:#6f4a24">A. Unknown（GoTappo 未披露，但竞品可见）</h3>
+    <h3 style="margin:10px 0 8px;font-size:16px;color:#6f4a24">A. 竞品可见证据（GoTappo 未披露）</h3>
     <div class="table-wrap">
       <table class="gap-table">
         <thead>
@@ -554,29 +644,10 @@ th{background:#fbf7f2;position:sticky;top:0}
           </tr></tbody>
       </table>
     </div>
-  
-    <h3 style="margin:16px 0 8px;font-size:16px;color:#6f4a24">B. Absent（GoTappo 明确不支持）</h3>
-    <p class="note">当前版本暂未收集到“GoTappo 明确不支持”的公开证据。本表留作后续：试用验证/演示确认/帮助中心核对的落位。</p>
-    <div class="table-wrap">
-      <table class="gap-table">
-        <thead>
-          <tr>
-            <th>功能</th>
-            <th>竞品证据（可点击）</th>
-            <th>备注</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="3" class="note">暂无条目（待补证据）。</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+</section>
 </div>
 
-<script
+<script>
 (function(){
   var toggles = document.querySelectorAll('.view-toggle');
   toggles.forEach(function(t){
@@ -601,6 +672,7 @@ th{background:#fbf7f2;position:sticky;top:0}
 </script>
 </body>
 </html>
+
 
 
 
