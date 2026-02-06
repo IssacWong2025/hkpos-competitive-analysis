@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>竞品分析：GoTappo（香港餐饮POS）</title>
+<title>竞品分析：Tappo（香港餐饮POS）</title>
 <style>
 :root { --bg:#f7f4ef; --ink:#1f1b16; --muted:#6b5f53; --card:#ffffff; --accent:#8b5e34; --line:#e4ddd4; }
 *{box-sizing:border-box}
@@ -57,11 +57,14 @@ th{background:#fbf7f2;position:sticky;top:0}
 
 /* Heatmap status */
 .feature-table .status{display:inline-block;min-width:18px;text-align:center;border-radius:6px;padding:1px 6px;font-weight:700}
-.feature-table .a{background:#dff1d8;color:#2f5e2f}
-.feature-table .w{background:#ffe9cc;color:#7a4b00}
+.feature-table .y{background:#dff1d8;color:#2f5e2f}
+.feature-table .p{background:#ffe9cc;color:#7a4b00}
 .feature-table .u{background:#eef0f3;color:#5a6573}
-.feature-table .heat-a{background:#e6f4df}
-.feature-table .heat-w{background:#fff1d6}
+.feature-table .n{background:#fde2e2;color:#7a1c1c}
+.feature-table .heat-n{background:#fff0f0}
+
+.feature-table .heat-y{background:#e6f4df}
+.feature-table .heat-p{background:#fff1d6}
 .feature-table .heat-u{background:#f3f4f6}
 .feature-table .hint{display:block;color:#6b5f53;font-size:11px;margin-top:3px}
 
@@ -81,7 +84,7 @@ th{background:#fbf7f2;position:sticky;top:0}
 <body>
 <div class="wrap">
   <header>
-    <h1>竞品分析：GoTappo（香港餐饮POS）</h1>
+    <h1>竞品分析：Tappo（香港餐饮POS）</h1>
     <div class="meta">分析日期：2026-02-03 <span class="badge">v1.2（进行中）</span> <span class="badge">HTML 便于对比</span></div>
   </header>
   <section>
@@ -99,7 +102,7 @@ th{background:#fbf7f2;position:sticky;top:0}
         <h3>重要声明（避免误读）</h3>
         <ul>
           <li><strong>Unknown（未披露）</strong> 仅表示“公开页面未找到证据”，不代表产品没有</li>
-          <li>矩阵的 <strong>Adequate / Weak / Unknown</strong> 是“基于公开证据的占位迁移”，用于内部对齐口径，不等同于最终强弱结论</li>
+          <li>矩阵状态含义：<strong>Y</strong>=有公开证据支持；<strong>P</strong>=部分/有限（或只能间接推断）；<strong>U</strong>=未找到公开证据；<strong>N</strong>=按 Tappo 官网/公开信息推导暂不支持（缺口用于内部对齐）</li>
           <li>建议后续用：试用/演示/帮助中心/真实门店访谈，逐步把 Unknown 变成可验证结论</li>
         </ul>
       </div>
@@ -126,7 +129,7 @@ th{background:#fbf7f2;position:sticky;top:0}
         <h3>轻量自助 + 轻量点单</h3>
         <div class="sub">更像“快速开通 + 低学习成本”</div>
         <div class="tags">
-          <span class="tag"><span class="dot core"></span>GoTappo</span>
+          <span class="tag"><span class="dot core"></span>Tappo</span>
           <span class="tag"><span class="dot"></span>Loyverse</span>
         </div>
       </div>
@@ -158,103 +161,18 @@ th{background:#fbf7f2;position:sticky;top:0}
       <span>↑ 轻量点单</span>
       <span>全套运营 ↓</span>
     </div>
-  
-  <section>
-    <h2>补充信息渠道（公开）</h2>
-    <p class="note">除官网功能页/定价页外，以下渠道通常能补齐：功能细节、更新节奏、活动促销、客户案例线索（建议后续纳入 Sources 维护）。</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>品牌</th>
-            <th>帮助中心/文档</th>
-            <th>社媒/活动</th>
-            <th>其它可用信源</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>GoTappo</td>
-            <td>
-              <a href="https://gotappo.canny.io/" target="_blank" rel="noopener">Canny（反馈/更新线索）</a>
-            </td>
-            <td>
-              <a href="https://www.facebook.com/profile.php?id=61566636965481" target="_blank" rel="noopener">Facebook</a>，
-              <a href="https://www.instagram.com/tappo_hk/" target="_blank" rel="noopener">Instagram</a>
-            </td>
-            <td>
-              <a href="https://www.gotappo.com/" target="_blank" rel="noopener">官网（入口）</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Eats365</td>
-            <td>
-              <a href="https://support.eats365pos.com/" target="_blank" rel="noopener">Support Center</a>
-            </td>
-            <td>
-              <a href="https://hk.linkedin.com/company/eats365" target="_blank" rel="noopener">LinkedIn</a>，
-              <a href="https://www.facebook.com/eats365pos/" target="_blank" rel="noopener">Facebook</a>，
-              <a href="https://twitter.com/eats365pos" target="_blank" rel="noopener">X/Twitter</a>
-            </td>
-            <td>
-              <a href="https://www.eats365pos.com/hk/" target="_blank" rel="noopener">官网（入口）</a>
-            </td>
-          </tr>
-          <tr>
-            <td>ezPOS</td>
-            <td>
-              <a href="https://ezacademy.ezpos.com.hk/" target="_blank" rel="noopener">ezACADEMY</a>
-            </td>
-            <td>
-              <a href="https://www.facebook.com/ezpos.hk" target="_blank" rel="noopener">Facebook</a>，
-              <a href="https://www.instagram.com/ezpos.hk/" target="_blank" rel="noopener">Instagram</a>
-            </td>
-            <td>
-              <a href="https://www.ezpos.hk/" target="_blank" rel="noopener">官网（入口）</a>
-            </td>
-          </tr>
-          <tr>
-            <td>ROKA</td>
-            <td>
-              （待补）
-            </td>
-            <td>
-              <a href="https://www.facebook.com/profile.php?id=100090895665833" target="_blank" rel="noopener">Facebook</a>，
-              <a href="https://www.instagram.com/emenuhk/" target="_blank" rel="noopener">Instagram</a>
-            </td>
-            <td>
-              <a href="https://www.roka.com.hk/" target="_blank" rel="noopener">官网（入口）</a>
-            </td>
-          </tr>
-          <tr>
-            <td>OmniWe</td>
-            <td>
-              <a href="https://omniwe.com/en-US/helpCenter/" target="_blank" rel="noopener">Help Center</a>
-            </td>
-            <td>
-              <a href="https://hk.linkedin.com/company/omniwe-limited" target="_blank" rel="noopener">LinkedIn</a>
-            </td>
-            <td>
-              <a href="https://omniwe.com/en-US/systemUpdate" target="_blank" rel="noopener">System Update</a>，
-              <a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">方案页</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
 </section>
 
   <section>
     <h2>执行摘要</h2>
-    <p>GoTappo主打“按单计费、无月费、快速上线”，并突出“外卖聚合+扫码点餐+一体化经营”。<a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></p>
+    <p>Tappo主打“按单计费、无月费、快速上线”，并突出“外卖聚合+扫码点餐+一体化经营”。<a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></p>
     <p>香港本地竞品中，iCHEF、ezPOS、ROKA 以“月费一口价+到店服务/培训”为主，定位偏服务与稳定交付。<a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a> <a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a> <a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></p>
     <p>Loyverse主打免费POS与插件生态；HCTC强调餐饮POS的多场景适配与线下咨询式交付。<a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a> <a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></p>
     <p>OmniWe与Eats365强调餐饮运营模块与解决方案的完整度。<a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a> <a href="https://www.eats365pos.com/hk/" target="_blank" rel="noopener">来源</a></p>
   </section>
 
   <section>
-    <h2>对比矩阵（13家，含GoTappo）</h2>
+    <h2>对比矩阵（13家，含Tappo）</h2>
     <div class="table-wrap">
       <table>
         <thead>
@@ -269,7 +187,7 @@ th{background:#fbf7f2;position:sticky;top:0}
         </thead>
         <tbody>
           <tr>
-            <td>GoTappo <span class="inline-source"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td>Tappo <span class="inline-source"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td>轻量POS、按单计费、外卖聚合、扫码点餐</td>
             <td>按订单信用点计费，无月费/无合同</td>
             <td>按量计费，免费试用与优惠期</td>
@@ -315,14 +233,6 @@ th{background:#fbf7f2;position:sticky;top:0}
             <td>未公开</td>
             <td>到店体验/咨询</td>
             <td>功能页+体验活动</td>
-          </tr>
-          <tr>
-            <td>e-POSHK <span class="inline-source"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
-            <td>服务导向、系统方案</td>
-            <td>未公开</td>
-            <td>未公开</td>
-            <td>表单/电话</td>
-            <td>关于我们/服务说明</td>
           </tr>
           <tr>
             <td>HCTC POSapp <span class="inline-source"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
@@ -378,7 +288,7 @@ th{background:#fbf7f2;position:sticky;top:0}
 
   <section>
     <h2>功能矩阵（全景）</h2>
-    <p class="note">说明：使用“视图切换 + 热力密度”降低信息密度。概览视图仅显示 Adequate/Weak/Unknown（基于公开证据的占位迁移），详情视图显示提示与链接。</p>
+    <p class="note">说明：使用“视图切换 + 热力密度”降低信息密度。概览视图显示 Y/P/U/N；详情视图显示提示与链接。</p>
     <div class="view-toggle" data-target="#featureMatrix">
       <button class="active" data-view="compact">概览视图</button>
       <button data-view="detail">详情视图</button>
@@ -388,14 +298,12 @@ th{background:#fbf7f2;position:sticky;top:0}
         <thead>
           <tr>
             <th>功能</th>
-            <th>GoTappo</th>
+            <th>Tappo</th>
             <th>iCHEF</th>
             <th>ezPOS</th>
             <th>ROKA</th>
             <th>OmniWe</th>
-            <th>DimPOS</th>
-            <th>e-POSHK</th>
-            <th>HCTC</th>
+            <th>DimPOS</th>            <th>HCTC</th>
             <th>Eats365</th>
             <th>Loyverse</th>
             <th>Gingersoft</th>
@@ -403,186 +311,164 @@ th{background:#fbf7f2;position:sticky;top:0}
             <th>DoLA</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>扫码点餐/自助点餐</td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.ichefpos.com/zh-hk/online-store" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">扫码点餐</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">eQR/自助</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">自助订购</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Scan-to-Order</span><a href="https://www.eats365pos.com/hk/expansion-module/scan-order-byod" target="_blank" rel="noopener">来源</a></span></td>
+        <tbody><tr><td>扫码点餐/自助点餐</td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.ichefpos.com/zh-hk/online-store" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">扫码点餐</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eQR/自助</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">QR code ordering</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
+            
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">自助订购</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Scan-to-Order</span><a href="https://www.eats365pos.com/hk/expansion-module/scan-order-byod" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">掃描QR點餐</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">掃碼自助點餐</span><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>线上接单/品牌官网下单</td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">线上接单</span><a href="https://www.ichefpos.com/zh-hk/online-ordering" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">外卖自取</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">掃描QR點餐</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">QR点餐</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">掃碼自助點餐</span><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>线上接单/品牌官网下单</td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">Delivery Aggregator</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">线上接单</span><a href="https://www.ichefpos.com/zh-hk/online-ordering" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">外卖自取</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eShop 線上下單</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">外送平台</span><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">外卖场景</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Branded Online Store</span><a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-branded-online-store" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">delivery选项</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">外送平台</span><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
+            
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">外卖场景</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Branded Online Store</span><a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-branded-online-store" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">delivery选项</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">堂食/自取/外送</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">堂食/自取/外送</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">外賣平台整合</span><a href="https://www.dolatechnology.com/zh/delivery-platform-integration" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>电子菜单/电子餐牌</td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">外賣平台整合</span><a href="https://www.dolatechnology.com/zh/delivery-platform-integration" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>电子菜单/电子餐牌</td>
+            <td class="cell heat-n"><span class="status n">N</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">瀏覽菜單</span><a href="https://www.ezpos.hk/solutions" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eMenu</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Customize menu</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">PhotoMenu</span><a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-photomenu" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">PhotoMenu</span><a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-photomenu" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>侍应下单（mPOS）</td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>侍应下单（mPOS）</td>
+            <td class="cell heat-n"><span class="status n">N</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">手機落單/手機授權</span><a href="https://www.ezpos.hk/ezpos/pricing" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eServe 員工落單</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">mPOS</span><a href="https://www.eats365pos.com/hk/expansion-module/mpos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">mPOS</span><a href="https://www.eats365pos.com/hk/expansion-module/mpos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">手機點餐系統</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">手機點餐系統</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>厨房出单/厨房打印/厨房屏</td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Kitchen ops</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>厨房出单/厨房打印/厨房屏</td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Kitchen ops</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">厨房出单</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">前后厨整合</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">厨房收单</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">厨房出单</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eChef</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">前后厨整合</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">厨房收单</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Kitchen Display</span><a href="https://support.eats365pos.com/en_US/eats365-products/eats365-kitchen-display-system" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">厨房打印</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Kitchen Display</span><a href="https://support.eats365pos.com/en_US/eats365-products/eats365-kitchen-display-system" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">厨房打印</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>库存管理/盘点</td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>库存管理/盘点</td>
+            <td class="cell heat-n"><span class="status n">N</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">eInventory</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">inventory control</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Inventory</span><a href="https://support.eats365pos.com/menu-setup/view-and-manage-inventory" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Inventory</span><a href="https://support.eats365pos.com/menu-setup/view-and-manage-inventory" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>报表/分析</td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Reports</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">分析報表</span><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">日報/班次</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">銷售分析</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">數據分析</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>报表/分析</td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Reports</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">分析報表</span><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">日報/班次</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">銷售分析</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">charts and reports</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">數據分析</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Reporting</span><a href="https://support.eats365pos.com/en_US/eats365-products/eats365-pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Sales analytics</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Reporting</span><a href="https://support.eats365pos.com/en_US/eats365-products/eats365-pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Sales analytics</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">多元報表</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">報表與分析</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">分析報告</span><a href="https://www.dolatechnology.com/zh/delivery-platform-integration" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>多支付方式/聚合收款</td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">现金/卡/钱包</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">多元報表</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">報表與分析</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">分析報告</span><a href="https://www.dolatechnology.com/zh/delivery-platform-integration" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>多支付方式/聚合收款</td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">现金/卡/钱包</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-w"><span class="status w">W</span><span class="detail-only"><span class="hint">扫码收款</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">电子支付</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Mobile pay</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">电子支付</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">多种支付</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">365pay</span><a href="https://www.eats365pos.com/hk/en/365pay" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Multiple pay</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-p"><span class="status p">P</span><span class="detail-only"><span class="hint">扫码收款</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">电子支付</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Mobile pay</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">电子支付</span><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
+            
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">多种支付</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">365pay</span><a href="https://www.eats365pos.com/hk/en/365pay" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Multiple pay</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">多種線上支付</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Octopus/AlipayHK等</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>多门店/多品牌管理</td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">多種線上支付</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Octopus/AlipayHK等</span><a href="https://caterlord.com/zh-hant/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>多门店/多品牌管理</td>
+            <td class="cell heat-n"><span class="status n">N</span><span class="detail-only"><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">集團/分店管理</span><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Multi-store Management</span><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
+            
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Multi-brand/Location</span><a href="https://www.eats365pos.com/tw/en/solution/multi-brandlocation-management" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Multi-brand/Location</span><a href="https://www.eats365pos.com/tw/en/solution/multi-brandlocation-management" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">多店精細化管理</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">多店精細化管理</span><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr>
-          <tr>
-            <td>离线模式</td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">离线同步</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+<tr><td>离线模式</td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">离线同步</span><a href="https://www.gotappo.com/en_hk/home_en_hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">离线运作</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">离线运作</span><a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://apps.apple.com/hk/app/id1561738870" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.eposhk.com/about-5" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">无网运行</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://support.eats365pos.com/en_US/eats365-products/eats365-kitchen-display-system" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-a"><span class="status a">A</span><span class="detail-only"><span class="hint">Work offline</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
+            
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">无网运行</span><a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Offline Mode</span><a href="https://support.eats365pos.com/device-management/maintain-restaurant-operations-using-offline-mode" target="_blank" rel="noopener">来源</a></span></td>
+            <td class="cell heat-y"><span class="status y">Y</span><span class="detail-only"><span class="hint">Work offline</span><a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a></span></td>
           
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">来源</a></span></td>
             <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://caterlord.com/zh-hant/" target="_blank" rel="noopener">来源</a></span></td>
-            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td>
-          </tr></tbody>
+            <td class="cell heat-u"><span class="status u">U</span><span class="detail-only"><a href="https://www.dolatechnology.com/zh" target="_blank" rel="noopener">来源</a></span></td></tr>
+        </tbody>
       </table>
     </div>
   </section>
 
   <section>
-    <h2>差距视图（以竞品证据补齐为主）</h2>
-    <p class="note">本区块用于补齐：当 GoTappo 对某能力未公开披露（或内部确认暂不支持）时，哪些竞品在公开渠道里有证据支持。后续你给我“内部确定不支持清单”后，我会把清单直接映射到这里并补全竞品证据。</p>
-
-    <h3 style="margin:10px 0 8px;font-size:16px;color:#6f4a24">A. 竞品可见证据（GoTappo 未披露）</h3>
+    <h2>差距视图（Tappo 暂不支持 vs 竞品证据）</h2>
+    <p class="note">逻辑：从“功能矩阵（全景）”里读取 <strong>Tappo = N</strong> 的功能；如果有竞品在该功能上为 <strong>Y/P</strong> 且有公开来源链接，则展示为缺口条目。</p>
     <div class="table-wrap">
       <table class="gap-table">
         <thead>
@@ -592,59 +478,12 @@ th{background:#fbf7f2;position:sticky;top:0}
             <th>备注</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>线上接单/品牌官网下单</td>
-            <td>
-              <a href="https://www.ichefpos.com/zh-hk/online-ordering" target="_blank" rel="noopener">iCHEF 线上接单</a>，
-              <a href="https://www.ezpos.hk/" target="_blank" rel="noopener">ezPOS 外卖自取</a>，
-              <a href="https://www.dimorder.com/dimpos/" target="_blank" rel="noopener">DimPOS 外送平台</a>，
-              <a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-branded-online-store" target="_blank" rel="noopener">Eats365 Branded Online Store</a>，
-              <a href="https://www.dolatechnology.com/zh/delivery-platform-integration" target="_blank" rel="noopener">DoLA 外賣平台整合</a>，
-              <a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">Gingersoft 外送/自取</a>
-            </td>
-            <td>GoTappo官网未明确公开对应描述</td>
-          </tr>
-          <tr>
-            <td>电子菜单/电子餐牌</td>
-            <td>
-              <a href="https://eats365pos.helpjuice.com/en_US/eats365-products/eats365-photomenu" target="_blank" rel="noopener">Eats365 PhotoMenu</a>
-            </td>
-            <td>自助点餐相关体验强化模块</td>
-          </tr>
-          <tr>
-            <td>侍应下单（mPOS）</td>
-            <td>
-              <a href="https://www.eats365pos.com/hk/expansion-module/mpos" target="_blank" rel="noopener">Eats365 mPOS</a>，
-              <a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">Gingersoft 手機點餐</a>
-            </td>
-            <td>适合大型/多楼层堂食场景</td>
-          </tr>
-          <tr>
-            <td>厨房出单/厨房屏</td>
-            <td>
-              <a href="https://support.eats365pos.com/en_US/eats365-products/eats365-kitchen-display-system" target="_blank" rel="noopener">Eats365 KDS</a>
-            </td>
-            <td>厨房流程数字化能力</td>
-          </tr>
-          <tr>
-            <td>库存管理/盘点</td>
-            <td>
-              <a href="https://support.eats365pos.com/menu-setup/view-and-manage-inventory" target="_blank" rel="noopener">Eats365 Inventory</a>
-            </td>
-            <td>若GoTappo有对应能力可补齐官网披露</td>
-          </tr>
-          <tr>
-            <td>多门店/多品牌管理</td>
-            <td>
-              <a href="https://www.eats365pos.com/tw/en/solution/multi-brandlocation-management" target="_blank" rel="noopener">Eats365 Multi‑Brand/Location</a>，
-              <a href="https://clggroup.com.hk/hk/fbPos" target="_blank" rel="noopener">Gingersoft 多店管理</a>
-            </td>
-            <td>偏连锁/多门店需求</td>
-          </tr></tbody>
+        <tbody id="gapBody">
+          <tr><td colspan="3" class="note">正在生成…</td></tr>
+        </tbody>
       </table>
     </div>
-</section>
+  </section>
 </div>
 
 <script>
@@ -669,9 +508,101 @@ th{background:#fbf7f2;position:sticky;top:0}
     });
   });
 })();
+
+function buildGapFromFeatureMatrix(){
+  var table = document.querySelector('table.feature-table');
+  var gapBody = document.getElementById('gapBody');
+  if(!table || !gapBody) return;
+
+  var headers = Array.from(table.querySelectorAll('thead th')).map(function(th){ return th.textContent.trim(); });
+  var tappoIdx = headers.indexOf('Tappo');
+  if(tappoIdx < 0) return;
+
+  var compCols = [];
+  headers.forEach(function(name, idx){
+    if(idx === 0) return;
+    if(idx === tappoIdx) return;
+    compCols.push({ idx: idx, name: name });
+  });
+
+  function statusOfCell(cell){
+    var st = cell.querySelector('.status');
+    return st ? st.textContent.trim() : '';
+  }
+
+  function evidenceLink(cell, competitorName){
+    var hint = cell.querySelector('.hint');
+    var a = cell.querySelector('a[href]');
+    if(!a) return null;
+    var label = competitorName;
+    if(hint && hint.textContent.trim()) label = competitorName + ' ' + hint.textContent.trim();
+    return { href: a.getAttribute('href'), label: label };
+  }
+
+  var rows = Array.from(table.querySelectorAll('tbody tr'));
+  var gapRows = [];
+
+  rows.forEach(function(tr){
+    var tds = tr.querySelectorAll('td');
+    if(!tds || tds.length === 0) return;
+    var feature = (tds[0].textContent || '').trim();
+    if(!feature) return;
+
+    var tappoCell = tds[tappoIdx];
+    if(!tappoCell) return;
+    var tappoStatus = statusOfCell(tappoCell);
+    if(tappoStatus !== 'N') return;
+
+    var links = [];
+    compCols.forEach(function(c){
+      var cell = tds[c.idx];
+      if(!cell) return;
+      var st = statusOfCell(cell);
+      if(st !== 'Y' && st !== 'P') return;
+      var ev = evidenceLink(cell, c.name);
+      if(ev) links.push(ev);
+    });
+
+    if(links.length === 0) return;
+    gapRows.push({ feature: feature, links: links });
+  });
+
+  gapBody.innerHTML = '';
+  if(gapRows.length === 0){
+    gapBody.innerHTML = '<tr><td colspan="3" class="note">暂无（当前矩阵里没有 Tappo=N 且竞品有公开证据的条目）。</td></tr>';
+    return;
+  }
+
+  gapRows.forEach(function(r){
+    var tdLinks = r.links.map(function(l){
+      return '<a href="' + l.href + '" target="_blank" rel="noopener">' + l.label + '</a>';
+    }).join('，');
+
+    var trHtml = '<tr>' +
+      '<td>' + r.feature + '</td>' +
+      '<td>' + tdLinks + '</td>' +
+      '<td class="note">来自矩阵详情链接</td>' +
+    '</tr>';
+
+    gapBody.insertAdjacentHTML('beforeend', trHtml);
+  });
+}
+
+buildGapFromFeatureMatrix();
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
