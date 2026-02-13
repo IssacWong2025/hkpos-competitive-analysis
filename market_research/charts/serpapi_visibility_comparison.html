@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<title>竞品搜索可见度分析 - SerpAPI</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 24px; }
+h1 { font-size: 24px; margin-bottom: 8px; color: #f8fafc; }
+.subtitle { color: #94a3b8; margin-bottom: 24px; font-size: 14px; }
+.card { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; padding: 12px; border-bottom: 2px solid #334155; color: #94a3b8; font-weight: 500; }
+td { padding: 12px; border-bottom: 1px solid #1e293b; }
+tr:hover td { background: #1e293b; }
+.metric { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.metric-high { background: #22c55e20; color: #22c55e; }
+.metric-mid { background: #3b82f620; color: #3b82f6; }
+.metric-low { background: #f59e0b20; color: #f59e0b; }
+.footer { margin-top: 24px; text-align: center; font-size: 12px; color: #475569; }
+</style>
+</head>
+<body>
+<h1>竞品搜索可见度分析</h1>
+<p class="subtitle">数据来源: Google Search (SerpAPI) &middot; 更新: 2026-02-13</p>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>竞品</th>
+        <th>搜索可见度</th>
+        <th>评分</th>
+        <th>搜索结果数</th>
+        <th>相关搜索数</th>
+        <th>知识图谱</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>Caterlord</strong></td>
+      <td><div style="background:#22c55e;width:98%;height:20px;border-radius:4px;"></div></td>
+      <td>98</td>
+      <td>10</td>
+      <td>9</td>
+      <td>位於香港的軟體公司</td>
+    </tr>
+    <tr>
+      <td><strong>Tappo</strong></td>
+      <td><div style="background:#22c55e;width:96%;height:20px;border-radius:4px;"></div></td>
+      <td>96</td>
+      <td>10</td>
+      <td>8</td>
+      <td>葡萄酒批發商及進口商</td>
+    </tr>
+    <tr>
+      <td><strong>iCHEF</strong></td>
+      <td><div style="background:#22c55e;width:96%;height:20px;border-radius:4px;"></div></td>
+      <td>96</td>
+      <td>10</td>
+      <td>8</td>
+      <td>位於香港的餐飲用品店</td>
+    </tr>
+    <tr>
+      <td><strong>薑軟件</strong></td>
+      <td><div style="background:#22c55e;width:96%;height:20px;border-radius:4px;"></div></td>
+      <td>96</td>
+      <td>10</td>
+      <td>8</td>
+      <td>位於香港的軟體公司</td>
+    </tr>
+    <tr>
+      <td><strong>Eats365</strong></td>
+      <td><div style="background:#22c55e;width:91%;height:20px;border-radius:4px;"></div></td>
+      <td>91</td>
+      <td>9</td>
+      <td>8</td>
+      <td>位於香港的軟體公司</td>
+    </tr>
+    <tr>
+      <td><strong>eMenu</strong></td>
+      <td><div style="background:#22c55e;width:80%;height:20px;border-radius:4px;"></div></td>
+      <td>80</td>
+      <td>10</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>HCTC</strong></td>
+      <td><div style="background:#22c55e;width:80%;height:20px;border-radius:4px;"></div></td>
+      <td>80</td>
+      <td>10</td>
+      <td>-</td>
+      <td>位於肯塔基哈澤德的社區大學</td>
+    </tr>
+    <tr>
+      <td><strong>OmniWe</strong></td>
+      <td><div style="background:#3b82f6;width:66%;height:20px;border-radius:4px;"></div></td>
+      <td>66</td>
+      <td>6</td>
+      <td>3</td>
+      <td>位於香港的電子商務服務</td>
+    </tr>
+    <tr>
+      <td><strong>DoLA</strong></td>
+      <td><div style="background:#3b82f6;width:66%;height:20px;border-radius:4px;"></div></td>
+      <td>66</td>
+      <td>10</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>ezPOS</strong></td>
+      <td><div style="background:#3b82f6;width:65%;height:20px;border-radius:4px;"></div></td>
+      <td>65</td>
+      <td>7</td>
+      <td>-</td>
+      <td>位於香港的軟體公司</td>
+    </tr>
+    <tr>
+      <td><strong>Loyverse</strong></td>
+      <td><div style="background:#3b82f6;width:56%;height:20px;border-radius:4px;"></div></td>
+      <td>56</td>
+      <td>8</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>DimPOS</strong></td>
+      <td><div style="background:#3b82f6;width:51%;height:20px;border-radius:4px;"></div></td>
+      <td>51</td>
+      <td>7</td>
+      <td>8</td>
+      <td>-</td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>评分说明：基于自然搜索结果数、知识图谱存在性、相关搜索数量综合计算</p>
+  <p>数据来源: SerpAPI (Google Search) | 仅供内部分析参考</p>
+</div>
+</body>
+</html>

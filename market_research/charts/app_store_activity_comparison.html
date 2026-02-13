@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<title>App Store 竞品活跃度对比 - 香港餐饮POS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 24px; }
+h1 { font-size: 24px; margin-bottom: 8px; color: #f8fafc; }
+.subtitle { color: #94a3b8; margin-bottom: 24px; font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 24px; }
+.card { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+.card h2 { font-size: 16px; margin-bottom: 16px; color: #cbd5e1; }
+.bar-chart { display: flex; flex-direction: column; gap: 8px; }
+.bar-row { display: flex; align-items: center; gap: 8px; }
+.bar-label { width: 80px; text-align: right; font-size: 13px; white-space: nowrap; }
+.bar-container { flex: 1; height: 28px; background: #0f172a; border-radius: 4px; overflow: hidden; position: relative; }
+.bar { height: 100%; border-radius: 4px; transition: width 0.6s ease; display: flex; align-items: center; padding-left: 8px; font-size: 12px; font-weight: 600; }
+.bar-value { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-size: 12px; color: #94a3b8; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 8px 12px; border-bottom: 2px solid #334155; color: #94a3b8; font-weight: 500; }
+td { padding: 8px 12px; border-bottom: 1px solid #1e293b; }
+tr:hover td { background: #1e293b; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+.badge-high { background: #22c55e20; color: #22c55e; }
+.badge-mid { background: #3b82f620; color: #3b82f6; }
+.badge-low { background: #f59e0b20; color: #f59e0b; }
+.badge-dead { background: #ef444420; color: #ef4444; }
+.badge-none { background: #9ca3af20; color: #9ca3af; }
+.stars { color: #fbbf24; }
+.insight { background: #1e293b; border-left: 3px solid #3b82f6; padding: 16px; border-radius: 0 8px 8px 0; margin-top: 16px; }
+.insight h3 { font-size: 14px; color: #3b82f6; margin-bottom: 8px; }
+.insight ul { padding-left: 20px; font-size: 13px; color: #94a3b8; line-height: 1.8; }
+.footer { margin-top: 24px; text-align: center; font-size: 12px; color: #475569; }
+</style>
+</head>
+<body>
+<h1>App Store 竞品活跃度对比</h1>
+<p class="subtitle">香港餐饮 POS 市场 &middot; 数据更新: 2026-02-13 &middot; 数据来源: iTunes Search API</p>
+
+<div class="grid">
+  <div class="card">
+    <h2>活跃度评分 (0-100)</h2>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="bar-label">iCHEF</div>
+        <div class="bar-container">
+          <div class="bar" style="width:100.0%;background:#3b82f6">67</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Eats365</div>
+        <div class="bar-container">
+          <div class="bar" style="width:97.01492537313433%;background:#3b82f6">65</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Loyverse</div>
+        <div class="bar-container">
+          <div class="bar" style="width:88.05970149253731%;background:#3b82f6">59</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">DoLA</div>
+        <div class="bar-container">
+          <div class="bar" style="width:74.6268656716418%;background:#3b82f6">50</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Gingersoft</div>
+        <div class="bar-container">
+          <div class="bar" style="width:71.64179104477611%;background:#f59e0b">48</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">ezPOS</div>
+        <div class="bar-container">
+          <div class="bar" style="width:62.68656716417911%;background:#f59e0b">42</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">OmniWe</div>
+        <div class="bar-container">
+          <div class="bar" style="width:52.23880597014925%;background:#f59e0b">35</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">DimPOS</div>
+        <div class="bar-container">
+          <div class="bar" style="width:50.74626865671642%;background:#f59e0b">34</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Caterlord</div>
+        <div class="bar-container">
+          <div class="bar" style="width:43.28358208955223%;background:#f59e0b">29</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Tappo</div>
+        <div class="bar-container">
+          <div class="bar" style="width:0.0%;background:#9ca3af">0</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">ROKA</div>
+        <div class="bar-container">
+          <div class="bar" style="width:0.0%;background:#9ca3af">0</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">HCTC</div>
+        <div class="bar-container">
+          <div class="bar" style="width:0.0%;background:#9ca3af">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>详细数据对比</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>竞品</th>
+          <th>评分</th>
+          <th>评论数</th>
+          <th>最后更新</th>
+          <th>距今</th>
+          <th>活跃度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>iCHEF</strong></td>
+          <td><span class='stars'>★★★</span> 3.46</td>
+          <td>13</td>
+          <td>2026-02-09</td>
+          <td>3.0天</td>
+          <td><span class="badge badge-mid">中活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>Eats365</strong></td>
+          <td><span class='stars'>★★</span> 2.89</td>
+          <td>27</td>
+          <td>2026-02-05</td>
+          <td>7.0天</td>
+          <td><span class="badge badge-mid">中活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>Loyverse</strong></td>
+          <td><span class='stars'>★★★★</span> 4.73</td>
+          <td>48</td>
+          <td>2026-01-06</td>
+          <td>37.0天</td>
+          <td><span class="badge badge-mid">中活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>DoLA</strong></td>
+          <td><span class='stars'>★★★★</span> 4.7</td>
+          <td>10</td>
+          <td>2025-12-12</td>
+          <td>62.0天</td>
+          <td><span class="badge badge-mid">中活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>Gingersoft</strong></td>
+          <td><span class='stars'>★★★</span> 3.51</td>
+          <td>193</td>
+          <td>2025-09-10</td>
+          <td>156.0天</td>
+          <td><span class="badge badge-low">低活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>ezPOS</strong></td>
+          <td>-</td>
+          <td>0</td>
+          <td>2026-02-05</td>
+          <td>7.0天</td>
+          <td><span class="badge badge-low">低活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>OmniWe</strong></td>
+          <td><span class='stars'>★★★★</span> 4.0</td>
+          <td>6</td>
+          <td>2025-08-29</td>
+          <td>167.0天</td>
+          <td><span class="badge badge-low">低活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>DimPOS</strong></td>
+          <td><span class='stars'>★★★</span> 3.12</td>
+          <td>171</td>
+          <td>2022-06-02</td>
+          <td>nan天</td>
+          <td><span class="badge badge-low">低活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>Caterlord</strong></td>
+          <td><span class='stars'>★★★★★</span> 5.0</td>
+          <td>1</td>
+          <td>2015-11-10</td>
+          <td>nan天</td>
+          <td><span class="badge badge-low">低活跃</span></td>
+        </tr>
+        <tr>
+          <td><strong>Tappo</strong></td>
+          <td>-</td>
+          <td>0</td>
+          <td>N/A</td>
+          <td>nan天</td>
+          <td><span class="badge badge-none">无数据</span></td>
+        </tr>
+        <tr>
+          <td><strong>ROKA</strong></td>
+          <td>-</td>
+          <td>0</td>
+          <td>N/A</td>
+          <td>nan天</td>
+          <td><span class="badge badge-none">无数据</span></td>
+        </tr>
+        <tr>
+          <td><strong>HCTC</strong></td>
+          <td>-</td>
+          <td>0</td>
+          <td>N/A</td>
+          <td>nan天</td>
+          <td><span class="badge badge-none">无数据</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="insight">
+  <h3>关键发现</h3>
+  <ul>
+    <li><strong>活跃竞品:</strong> iCHEF、Eats365、Loyverse、DoLA 在近期持续更新，产品迭代活跃</li>
+    <li><strong>无 App 竞品:</strong> Tappo、ROKA、HCTC 未在 App Store 上架，可能为纯 Web 或定制部署方案</li>
+    <li><strong>用户基数:</strong> Gingersoft 评论数最多（193条），暗示较大用户基础</li>
+    <li><strong>用户满意度:</strong> Caterlord 评分最高（5.0分），用户满意度领先</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>数据来源: Apple iTunes Search API (HK Store) | 仅供内部分析参考</p>
+</div>
+</body>
+</html>
