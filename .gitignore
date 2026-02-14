@@ -1,3 +1,8 @@
-.DS_Store
+﻿.DS_Store
 Thumbs.db
 docs/_tmp_*.html
+
+browser_profile_similarweb/
+cookies.json
+nul
+
