@@ -158,8 +158,8 @@ def load_all_data():
     # Create DataFrame
     df_final = pd.DataFrame(results)
 
-    # Sort by market presence (use iloc[:, 8] for 市场规模评分)
-    df_final = df_final.sort_values(df_final.columns[8], ascending=False)
+    # Sort by market presence
+    df_final = df_final.sort_values('市场规模评分', ascending=False)
 
     # Calculate market share (simplified)
     # Assuming Hong Kong restaurant market ~17,000 establishments
@@ -204,8 +204,7 @@ def generate_summary_report(df):
 |------|------|-------------|---------|--------|----------|------|
 """
 
-    for i, row in df.head(12).iterrows():
-        rank = i + 1
+    for rank, (_, row) in enumerate(df.head(12).iterrows(), start=1):
         name = row['竞品中文名']
         score = row['市场规模评分']
         employees = row['员工数']
@@ -247,14 +246,13 @@ def generate_summary_report(df):
 """
 
     top3 = df.head(3)
-    for i, row in top3.iterrows():
-        rank = i + 1
-        name = row.iloc[0]  # 竞品中文名
-        score = row.iloc[8]  # 市场规模评分
-        employees = row.iloc[3]  # 员工数
-        customers = row.iloc[12]  # 估算商户数
-        rating = row.iloc[5]  # App Store评分
-        activity = row.iloc[7]  # App Store活跃度
+    for rank, (_, row) in enumerate(top3.iterrows(), start=1):
+        name = row['竞品中文名']
+        score = row['市场规模评分']
+        employees = row['员工数']
+        customers = row['官网客户案例数']
+        rating = row['App Store评分']
+        activity = row['App Store活跃度']
 
         report += f"**{rank}. {name}** ({score:.2f}分)\n"
         report += f"- 员工规模: {employees}人\n"
@@ -391,8 +389,8 @@ def generate_comparison_charts(df):
 
     items_html = ""
     for _, row in top10.iterrows():
-        name = row.iloc[0]  # 竞品中文名
-        score = row.iloc[8]  # 市场规模评分
+        name = row['竞品中文名']
+        score = row['市场规模评分']
         color = '#22c55e' if score >= 70 else '#3b82f6' if score >= 50 else '#f59e0b' if score >= 30 else '#9ca3af'
 
         items_html += f"""
@@ -493,9 +491,9 @@ def main():
 
     print(f"\n✓ Integrated {len(df)} competitors")
     print("\nData breakdown:")
-    print(f"  - With LinkedIn data: {len(df[df.iloc[:, 3] > 0])}")  # 员工数 column 3
-    print(f"  - With website cases: {len(df[df.iloc[:, 4] > 0])}")  # 官网客户案例数 column 4
-    print(f"  - With App Store data: {len(df[df.iloc[:, 5] > 0])}")  # App Store评分 column 5
+    print(f"  - With LinkedIn data: {len(df[df['员工数'] > 0])}")
+    print(f"  - With website cases: {len(df[df['官网客户案例数'] > 0])}")
+    print(f"  - With App Store data: {len(df[df['App Store评分'] > 0])}")
 
     # Save to Excel
     print("\n" + "=" * 60)
@@ -519,8 +517,8 @@ def main():
     print(f"  Total competitors: {len(df)}")
     print(f"  Data completeness: 98%")
     print(f"\nTop 3 by market presence:")
-    for i, row in df.head(3).iterrows():
-        print(f"    {i+1}. {row.iloc[0]}: {row.iloc[8]:.2f} (employees:{row.iloc[3]}, customers:{row.iloc[12]})")
+    for i, (_, row) in enumerate(df.head(3).iterrows(), start=1):
+        print(f"    {i}. {row['竞品中文名']}: {row['市场规模评分']:.2f} (employees:{row['员工数']}, customers:{row['官网客户案例数']})")
 
     print(f"\nOutput files:")
     print(f"  📊 Data: {output_file}")
