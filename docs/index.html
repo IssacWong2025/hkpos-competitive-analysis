@@ -87,12 +87,6 @@ th{background:#fbf7f2;position:sticky;top:0}
 .ads-list li{margin:4px 0}
 .ads-table th,.ads-table td{font-size:12px;padding:8px 10px}
 .ads-empty{color:var(--muted);font-size:12px}
-.v2-box{margin-top:12px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px 14px}
-.v2-box h3{margin:0 0 8px;font-size:14px;color:#6f4a24}
-.v2-box .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
-.v2-grid{display:grid;grid-template-columns:1fr;gap:10px}
-@media (min-width: 980px){ .v2-grid{grid-template-columns:1fr 1fr} }
-.v2-list{margin:0;padding-left:18px;font-size:12px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -222,6 +216,7 @@ th{background:#fbf7f2;position:sticky;top:0}
   <section>
     <h2>市场份额 V3（重建信源）</h2>
     <p class="note">口径：香港总活跃门店数份额（2026-02）。约束：Tappo 当前无客户，份额固定为 0。</p>
+    <p class="note">评估方式：基于 S/A/B 证据分层（S=官方一手证据，A=Meta+Semrush 增长信号，B=弱代理信号）形成综合评分后归一化为份额（展示 P50 单点）。</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -252,27 +247,10 @@ th{background:#fbf7f2;position:sticky;top:0}
       数据与结果：<a href="market_research/data/raw_signals_20260214.xlsx" target="_blank">raw_signals</a> /
       <a href="market_research/data/evidence_log_20260214.xlsx" target="_blank">evidence_log</a> /
       <a href="market_research/data/model_inputs_20260214.xlsx" target="_blank">model_inputs</a> /
-      <a href="market_research/analysis/market_share_results_v3_20260214.md" target="_blank">结果报告</a>
+      <a href="market_research/analysis/market_share_results_v3_20260214.md" target="_blank">结果报告</a> /
+      <a href="market_research/data/evidence_log_v2_20260303.xlsx" target="_blank">evidence_log_v2</a> /
+      <a href="market_research/data/model_inputs_v4_seed_20260303.csv" target="_blank">model_inputs_v4_seed</a>
     </p>
-    <div class="v2-box">
-      <h3>V2 信源门槛状态（Semrush + Meta + 官方证据）</h3>
-      <div id="v2GateMeta" class="meta">加载中...</div>
-      <div class="v2-grid">
-        <div>
-          <div class="meta">通过门槛（主池）</div>
-          <ul id="v2PassList" class="v2-list"><li class="ads-empty">加载中...</li></ul>
-        </div>
-        <div>
-          <div class="meta">未通过（观察池）</div>
-          <ul id="v2FailList" class="v2-list"><li class="ads-empty">加载中...</li></ul>
-        </div>
-      </div>
-      <p class="note" style="margin-top:8px">
-        数据文件：<a href="market_research/data/competitor_signal_panel_v2_20260303.csv" target="_blank">competitor_signal_panel_v2</a> /
-        <a href="market_research/data/model_inputs_v4_seed_20260303.csv" target="_blank">model_inputs_v4_seed</a> /
-        <a href="market_research/data/evidence_log_v2_20260303.xlsx" target="_blank">evidence_log_v2</a>
-      </p>
-    </div>
   </section>
 <section>
     <h2>对比矩阵（13家，含Tappo）</h2>
@@ -779,63 +757,6 @@ function loadAdsIntel(){
 }
 
 loadAdsIntel();
-
-function renderV2Gate(snapshot){
-  var metaEl = document.getElementById('v2GateMeta');
-  var passEl = document.getElementById('v2PassList');
-  var failEl = document.getElementById('v2FailList');
-  if(!metaEl || !passEl || !failEl) return;
-
-  var gateRule = textOrDash(snapshot.gate_rule);
-  var passCount = Number(snapshot.pass_count || 0);
-  var total = Number(snapshot.total_count || 0);
-  var comps = snapshot.competitors || [];
-  metaEl.textContent = '门槛规则：' + gateRule + ' | 通过：' + passCount + '/' + total;
-
-  var passRows = comps.filter(function(x){ return String(x.meets_min_evidence_gate || '') === 'Y'; });
-  var failRows = comps.filter(function(x){ return String(x.meets_min_evidence_gate || '') !== 'Y'; });
-
-  function rowText(r){
-    return textOrDash(r.competitor_name) + '（S=' + textOrDash(r.s_evidence_count) + '，A_eff=' + textOrDash(r.a_effective_count) + '）';
-  }
-
-  passEl.innerHTML = '';
-  if(!passRows.length){
-    passEl.innerHTML = '<li class="ads-empty">暂无</li>';
-  } else {
-    passRows.forEach(function(r){
-      var li = document.createElement('li');
-      li.textContent = rowText(r);
-      passEl.appendChild(li);
-    });
-  }
-
-  failEl.innerHTML = '';
-  if(!failRows.length){
-    failEl.innerHTML = '<li class="ads-empty">暂无</li>';
-  } else {
-    failRows.forEach(function(r){
-      var li = document.createElement('li');
-      li.textContent = rowText(r);
-      failEl.appendChild(li);
-    });
-  }
-}
-
-function loadV2Gate(){
-  fetch('data/market_share_v2_snapshot.json', {cache: 'no-store'})
-    .then(function(r){
-      if(!r.ok) throw new Error('http_' + r.status);
-      return r.json();
-    })
-    .then(renderV2Gate)
-    .catch(function(){
-      var metaEl = document.getElementById('v2GateMeta');
-      if(metaEl) metaEl.textContent = '未找到 V2 快照，请先运行 python scripts/build_signal_panel_v2.py';
-    });
-}
-
-loadV2Gate();
 </script>
 </body>
 </html>
