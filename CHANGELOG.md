@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.8 (2026-03-03)
+- Updated `docs/index.html` analysis date to `2026-03-03`.
+- Simplified market-share section to final assessment + plain-language method explanation.
+- Marked this phase as temporary stop point for next iteration planning.
+
 ## v1.7 (2026-03-03)
 - Integrated Ads Intelligence module into `docs/index.html`:
   - Meta active advertisers list with Ad Library links
