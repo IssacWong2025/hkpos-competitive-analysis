@@ -1,0 +1,282 @@
+{
+  "generated_at": "2026-03-03T10:09:09",
+  "meta": {
+    "active": [
+      {
+        "competitor_name": "Caterlord",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=CaterlordCloudPOS",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "DimPOS",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=DimOrder",
+        "objective_path_hint": "click_to_message",
+        "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "messenger"
+      },
+      {
+        "competitor_name": "DoLA",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=dolatechnology",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "Eats365",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=eats365pos",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "ezPOS",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ezpos.hk",
+        "objective_path_hint": "click_to_message",
+        "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "whatsapp"
+      },
+      {
+        "competitor_name": "Gingersoft",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=gspos",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "HCTC",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=pos.hctc",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "iCHEF",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ichefpos.taiwan",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "Loyverse",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=loyversepos",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "OmniWe",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=omniwe",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      },
+      {
+        "competitor_name": "ROKA",
+        "status": "active",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=people",
+        "objective_path_hint": "website",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "message_destination_hint": "website"
+      }
+    ],
+    "likely_active": [],
+    "unknown": [],
+    "type_distribution": {
+      "click_to_message": 2,
+      "lead_form": 0,
+      "website": 9,
+      "unknown": 0
+    },
+    "top_tags": [
+      {
+        "label": "上手快",
+        "count": 1,
+        "competitor_name": "Caterlord"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "Caterlord"
+      },
+      {
+        "label": "私信咨询",
+        "count": 1,
+        "competitor_name": "DimPOS"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "DoLA"
+      },
+      {
+        "label": "促销优惠",
+        "count": 1,
+        "competitor_name": "Eats365"
+      },
+      {
+        "label": "私信咨询",
+        "count": 1,
+        "competitor_name": "Eats365"
+      },
+      {
+        "label": "私信咨询",
+        "count": 1,
+        "competitor_name": "ezPOS"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "Gingersoft"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "HCTC"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "iCHEF"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "Loyverse"
+      },
+      {
+        "label": "提升效率",
+        "count": 1,
+        "competitor_name": "OmniWe"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "OmniWe"
+      },
+      {
+        "label": "网站引流",
+        "count": 1,
+        "competitor_name": "ROKA"
+      }
+    ]
+  },
+  "google": {
+    "top_intent_keywords": [
+      {
+        "keyword": "eat365",
+        "count": 5
+      },
+      {
+        "keyword": "caterlord",
+        "count": 3
+      },
+      {
+        "keyword": "餐飲 pos",
+        "count": 3
+      },
+      {
+        "keyword": "hk pos system",
+        "count": 3
+      },
+      {
+        "keyword": "qr code ordering system",
+        "count": 3
+      },
+      {
+        "keyword": "餐饮 管理 系统",
+        "count": 3
+      },
+      {
+        "keyword": "inline app",
+        "count": 2
+      },
+      {
+        "keyword": "eats365 hk",
+        "count": 2
+      },
+      {
+        "keyword": "外賣 系統",
+        "count": 2
+      },
+      {
+        "keyword": "seito pos",
+        "count": 2
+      },
+      {
+        "keyword": "pin me limited",
+        "count": 2
+      },
+      {
+        "keyword": "erun",
+        "count": 2
+      },
+      {
+        "keyword": "pos solutions",
+        "count": 2
+      },
+      {
+        "keyword": "pos hardware",
+        "count": 2
+      },
+      {
+        "keyword": "電子 收銀 機",
+        "count": 1
+      },
+      {
+        "keyword": "pos hong kong",
+        "count": 1
+      },
+      {
+        "keyword": "pos system hong kong",
+        "count": 1
+      },
+      {
+        "keyword": "one pos",
+        "count": 1
+      },
+      {
+        "keyword": "ipad pos system",
+        "count": 1
+      },
+      {
+        "keyword": "online menu maker",
+        "count": 1
+      }
+    ],
+    "top_domains": [
+      {
+        "website_domain": "ezpos.hk",
+        "coverage": 28
+      },
+      {
+        "website_domain": "eats365pos.com",
+        "coverage": 17
+      },
+      {
+        "website_domain": "dolatechnology.com",
+        "coverage": 8
+      },
+      {
+        "website_domain": "ichefpos.com",
+        "coverage": 6
+      },
+      {
+        "website_domain": "omniwe.com",
+        "coverage": 5
+      }
+    ],
+    "has_data": true
+  }
+}

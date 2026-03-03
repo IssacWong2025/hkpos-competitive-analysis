@@ -79,13 +79,21 @@ th{background:#fbf7f2;position:sticky;top:0}
 
 .gap-table{font-size:13px}
 .gap-table td:first-child{font-weight:600}
+.ads-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width: 980px){ .ads-grid{grid-template-columns:1fr 1fr} }
+.ads-card{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff}
+.ads-card h3{margin:0 0 8px;font-size:14px;color:#6f4a24}
+.ads-list{margin:0;padding-left:18px;font-size:13px;line-height:1.5}
+.ads-list li{margin:4px 0}
+.ads-table th,.ads-table td{font-size:12px;padding:8px 10px}
+.ads-empty{color:var(--muted);font-size:12px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>竞品分析：Tappo（香港餐饮POS）</h1>
-    <div class="meta">分析日期：2026-02-14 <span class="badge">v1.4</span> <span class="badge">HTML 便于对比</span></div>
+    <div class="meta">分析日期：2026-02-14 <span class="badge">v1.6（市场份额V3）</span> <span class="badge">HTML 便于对比</span></div>
   </header>
   <section>
     <h2>范围与使用方式</h2>
@@ -169,6 +177,77 @@ th{background:#fbf7f2;position:sticky;top:0}
     <p>香港本地竞品中，iCHEF、ezPOS、ROKA 以“月费一口价+到店服务/培训”为主，定位偏服务与稳定交付。<a href="https://www.ichefpos.com/zh-hk" target="_blank" rel="noopener">来源</a> <a href="https://www.ezpos.hk/" target="_blank" rel="noopener">来源</a> <a href="https://www.roka.com.hk/" target="_blank" rel="noopener">来源</a></p>
     <p>Loyverse主打免费POS与插件生态；HCTC强调餐饮POS的多场景适配与线下咨询式交付。<a href="https://loyverse.com/features" target="_blank" rel="noopener">来源</a> <a href="https://posapp.hctc.com.hk/" target="_blank" rel="noopener">来源</a></p>
     <p>OmniWe与Eats365强调餐饮运营模块与解决方案的完整度。<a href="https://omniwe.com/en-US/oursolutions/dining_pos" target="_blank" rel="noopener">来源</a> <a href="https://www.eats365pos.com/hk/" target="_blank" rel="noopener">来源</a></p>
+  </section>
+
+  <section id="adsIntelSection">
+    <h2>增长投放情报（Meta 为主，Google 为辅）</h2>
+    <p class="note">用途：补齐“竞品如何获客”的证据层。数据来自 `scripts/run_all.py` 生成的 `docs/data/ads_snapshot.json`。</p>
+    <div class="ads-grid">
+      <div class="ads-card">
+        <h3>谁在投（Meta）</h3>
+        <ul id="adsMetaActiveList" class="ads-list"><li class="ads-empty">加载中...</li></ul>
+      </div>
+      <div class="ads-card">
+        <h3>投放类型分布（Meta）</h3>
+        <ul id="adsMetaTypeList" class="ads-list"><li class="ads-empty">加载中...</li></ul>
+      </div>
+      <div class="ads-card">
+        <h3>主要主张标签（Meta）</h3>
+        <div class="table-wrap">
+          <table class="ads-table">
+            <thead><tr><th>标签</th><th>频次</th><th>代表竞品</th></tr></thead>
+            <tbody id="adsMetaTagsBody"><tr><td colspan="3" class="ads-empty">加载中...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ads-card">
+        <h3>Google Paid 参考（Semrush）</h3>
+        <div class="table-wrap">
+          <table class="ads-table">
+            <thead><tr><th>Top 意图词</th><th>出现竞品数</th></tr></thead>
+            <tbody id="adsGoogleKwBody"><tr><td colspan="2" class="ads-empty">加载中...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p id="adsGeneratedAt" class="note" style="margin-top:10px">更新时间：-</p>
+  </section>
+
+  <section>
+    <h2>市场份额 V3（重建信源）</h2>
+    <p class="note">口径：香港总活跃门店数份额（2026-02）。约束：Tappo 当前无客户，份额固定为 0。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>竞品</th>
+            <th>P50（单点）</th>
+            <th>置信度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Eats365</td><td>18.24%</td><td>B</td></tr>
+          <tr><td>2</td><td>DoLA</td><td>13.53%</td><td>A</td></tr>
+          <tr><td>3</td><td>DimPOS</td><td>10.74%</td><td>A</td></tr>
+          <tr><td>4</td><td>Gingersoft</td><td>9.88%</td><td>A</td></tr>
+          <tr><td>5</td><td>Loyverse</td><td>8.69%</td><td>A</td></tr>
+          <tr><td>6</td><td>OmniWe</td><td>7.69%</td><td>B</td></tr>
+          <tr><td>7</td><td>eMenu (ROKA)</td><td>7.69%</td><td>C</td></tr>
+          <tr><td>8</td><td>iCHEF</td><td>7.62%</td><td>A</td></tr>
+          <tr><td>9</td><td>Caterlord</td><td>5.73%</td><td>A</td></tr>
+          <tr><td>10</td><td>ezPOS</td><td>5.72%</td><td>B</td></tr>
+          <tr><td>11</td><td>HCTC</td><td>4.47%</td><td>B</td></tr>
+          <tr><td>12</td><td>Tappo</td><td>0.00%</td><td>C</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:10px">
+      数据与结果：<a href="market_research/data/raw_signals_20260214.xlsx" target="_blank">raw_signals</a> /
+      <a href="market_research/data/evidence_log_20260214.xlsx" target="_blank">evidence_log</a> /
+      <a href="market_research/data/model_inputs_20260214.xlsx" target="_blank">model_inputs</a> /
+      <a href="market_research/analysis/market_share_results_v3_20260214.md" target="_blank">结果报告</a>
+    </p>
   </section>
 <section>
     <h2>对比矩阵（13家，含Tappo）</h2>
@@ -588,9 +667,96 @@ function buildGapFromFeatureMatrix(){
 }
 
 buildGapFromFeatureMatrix();
+
+function textOrDash(v){
+  if(v === null || v === undefined) return '-';
+  var s = String(v).trim();
+  return s ? s : '-';
+}
+
+function renderAdsIntel(snapshot){
+  var active = (((snapshot || {}).meta || {}).active) || [];
+  var dist = (((snapshot || {}).meta || {}).type_distribution) || {};
+  var tags = (((snapshot || {}).meta || {}).top_tags) || [];
+  var kws = (((snapshot || {}).google || {}).top_intent_keywords) || [];
+  var generatedAt = (snapshot || {}).generated_at || '';
+
+  var activeList = document.getElementById('adsMetaActiveList');
+  var typeList = document.getElementById('adsMetaTypeList');
+  var tagsBody = document.getElementById('adsMetaTagsBody');
+  var kwBody = document.getElementById('adsGoogleKwBody');
+  var at = document.getElementById('adsGeneratedAt');
+  if(!activeList || !typeList || !tagsBody || !kwBody || !at) return;
+
+  activeList.innerHTML = '';
+  if(!active.length){
+    activeList.innerHTML = '<li class="ads-empty">暂无 active 记录</li>';
+  } else {
+    active.forEach(function(item){
+      var li = document.createElement('li');
+      var url = textOrDash(item.ad_library_url);
+      var name = textOrDash(item.competitor_name);
+      li.innerHTML = '<a href="' + url + '" target="_blank" rel="noopener">' + name + '</a>' +
+        '（' + textOrDash(item.objective_path_hint) + '）';
+      activeList.appendChild(li);
+    });
+  }
+
+  var ct = Number(dist.click_to_message || 0);
+  var lf = Number(dist.lead_form || 0);
+  var ws = Number(dist.website || 0);
+  var uk = Number(dist.unknown || 0);
+  typeList.innerHTML = '' +
+    '<li>Click-to-Message：' + ct + '</li>' +
+    '<li>Lead Form：' + lf + '</li>' +
+    '<li>Website：' + ws + '</li>' +
+    '<li>Unknown：' + uk + '</li>';
+
+  tagsBody.innerHTML = '';
+  if(!tags.length){
+    tagsBody.innerHTML = '<tr><td colspan="3" class="ads-empty">暂无标签数据</td></tr>';
+  } else {
+    tags.slice(0,10).forEach(function(t){
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + textOrDash(t.label) + '</td><td>' + textOrDash(t.count) + '</td><td>' + textOrDash(t.competitor_name) + '</td>';
+      tagsBody.appendChild(tr);
+    });
+  }
+
+  kwBody.innerHTML = '';
+  if(!kws.length){
+    kwBody.innerHTML = '<tr><td colspan="2" class="ads-empty">暂无 Google paid 关键词样本</td></tr>';
+  } else {
+    kws.slice(0,10).forEach(function(k){
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + textOrDash(k.keyword) + '</td><td>' + textOrDash(k.count) + '</td>';
+      kwBody.appendChild(tr);
+    });
+  }
+
+  at.textContent = '更新时间：' + textOrDash(generatedAt);
+}
+
+function loadAdsIntel(){
+  fetch('data/ads_snapshot.json', {cache: 'no-store'})
+    .then(function(r){
+      if(!r.ok) throw new Error('http_' + r.status);
+      return r.json();
+    })
+    .then(renderAdsIntel)
+    .catch(function(){
+      var el = document.getElementById('adsMetaActiveList');
+      if(el) el.innerHTML = '<li class="ads-empty">未找到 ads_snapshot.json，请先运行 python scripts/run_all.py</li>';
+      var at = document.getElementById('adsGeneratedAt');
+      if(at) at.textContent = '更新时间：未加载';
+    });
+}
+
+loadAdsIntel();
 </script>
 </body>
 </html>
+
 
 
 
