@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-03-03T10:09:09",
+  "generated_at": "2026-03-03T10:53:50",
   "meta": {
     "active": [
       {
         "competitor_name": "Caterlord",
         "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=CaterlordCloudPOS",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=caterlord",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -14,6 +15,7 @@
         "competitor_name": "DimPOS",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=DimOrder",
+        "ad_count_active": "",
         "objective_path_hint": "click_to_message",
         "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "messenger"
@@ -22,6 +24,7 @@
         "competitor_name": "DoLA",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=dolatechnology",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -30,6 +33,7 @@
         "competitor_name": "Eats365",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=eats365pos",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -38,6 +42,7 @@
         "competitor_name": "ezPOS",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ezpos.hk",
+        "ad_count_active": "",
         "objective_path_hint": "click_to_message",
         "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "whatsapp"
@@ -45,7 +50,8 @@
       {
         "competitor_name": "Gingersoft",
         "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=gspos",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=Gingersoft",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -54,6 +60,7 @@
         "competitor_name": "HCTC",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=pos.hctc",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -62,6 +69,7 @@
         "competitor_name": "iCHEF",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ichefpos.taiwan",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -70,6 +78,7 @@
         "competitor_name": "Loyverse",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=loyversepos",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -78,6 +87,7 @@
         "competitor_name": "OmniWe",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=omniwe",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"
@@ -85,7 +95,8 @@
       {
         "competitor_name": "ROKA",
         "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=people",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ROKA",
+        "ad_count_active": "",
         "objective_path_hint": "website",
         "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
         "message_destination_hint": "website"

@@ -809,6 +809,7 @@ def build_ads_snapshot(path:Path,meta_rows:Sequence[Dict[str,str]],kw_rows:Seque
             "competitor_name":r.get("competitor_name",""),
             "status":r.get("status",""),
             "ad_library_url":r.get("ad_library_url",""),
+            "ad_count_active":r.get("ad_count_active",""),
             "objective_path_hint":r.get("objective_path_hint","unknown"),
             "objective_reason":r.get("objective_reason",""),
             "message_destination_hint":r.get("message_destination_hint","unknown"),

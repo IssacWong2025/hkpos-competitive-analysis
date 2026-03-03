@@ -696,8 +696,9 @@ function renderAdsIntel(snapshot){
       var li = document.createElement('li');
       var url = textOrDash(item.ad_library_url);
       var name = textOrDash(item.competitor_name);
+      var adCount = textOrDash(item.ad_count_active);
       li.innerHTML = '<a href="' + url + '" target="_blank" rel="noopener">' + name + '</a>' +
-        '（' + textOrDash(item.objective_path_hint) + '）';
+        '（' + textOrDash(item.objective_path_hint) + '，广告数：' + adCount + '）';
       activeList.appendChild(li);
     });
   }
