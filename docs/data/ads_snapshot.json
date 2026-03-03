@@ -1,128 +1,124 @@
 {
-  "generated_at": "2026-03-03T10:53:50",
+  "generated_at": "2026-03-03T11:23:16",
   "meta": {
     "active": [
       {
         "competitor_name": "Caterlord",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=caterlord",
-        "ad_count_active": "",
+        "ad_count_active": "6",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "found 6 ads via CaterlordCloudPOS",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "DimPOS",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=DimOrder",
-        "ad_count_active": "",
-        "objective_path_hint": "click_to_message",
-        "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
-        "message_destination_hint": "messenger"
+        "ad_count_active": "1",
+        "objective_path_hint": "website",
+        "objective_reason": "found 190 ads via Dim Order",
+        "message_destination_hint": "website"
       },
       {
         "competitor_name": "DoLA",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=dolatechnology",
-        "ad_count_active": "",
+        "ad_count_active": "2",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "found 2 ads via dola",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "Eats365",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=eats365pos",
-        "ad_count_active": "",
+        "ad_count_active": "6",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "ads are from merchants, not official",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "ezPOS",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ezpos.hk",
-        "ad_count_active": "",
-        "objective_path_hint": "click_to_message",
-        "objective_reason": "Matched messaging pattern (wa.me/whatsapp/messenger/send_message). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
-        "message_destination_hint": "whatsapp"
-      },
-      {
-        "competitor_name": "Gingersoft",
-        "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=Gingersoft",
-        "ad_count_active": "",
+        "ad_count_active": "8",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "found 8 ads via ezPOS",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "HCTC",
         "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=pos.hctc",
-        "ad_count_active": "",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=HCTC",
+        "ad_count_active": "1",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "found 1 ads via HCTC",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "iCHEF",
         "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ichefpos.taiwan",
-        "ad_count_active": "",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=iCHEF",
+        "ad_count_active": "63",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "found 63 ads via ichefpos",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "Loyverse",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=loyversepos",
-        "ad_count_active": "",
+        "ad_count_active": "0",
         "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
+        "objective_reason": "Matched external-link pattern (website URL in creative fields).",
         "message_destination_hint": "website"
       },
       {
         "competitor_name": "OmniWe",
         "status": "active",
         "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=omniwe",
-        "ad_count_active": "",
-        "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
-        "message_destination_hint": "website"
-      },
-      {
-        "competitor_name": "ROKA",
-        "status": "active",
-        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ROKA",
-        "ad_count_active": "",
-        "objective_path_hint": "website",
-        "objective_reason": "Matched external-link pattern (website URL in creative fields). Manual Ad Library fields populated (copy/CTA/landing/ad_id), marked as active evidence.",
-        "message_destination_hint": "website"
+        "ad_count_active": "18",
+        "objective_path_hint": "click_to_message",
+        "objective_reason": "found 18 ads via OmniWe",
+        "message_destination_hint": "whatsapp"
       }
     ],
     "likely_active": [],
-    "unknown": [],
+    "unknown": [
+      {
+        "competitor_name": "Gingersoft",
+        "status": "unknown",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=Gingersoft",
+        "ad_count_active": "0",
+        "objective_path_hint": "unknown",
+        "objective_reason": "Insufficient signals in parsed fields; needs manual verification from Ad Library card.",
+        "message_destination_hint": "unknown"
+      },
+      {
+        "competitor_name": "ROKA",
+        "status": "unknown",
+        "ad_library_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=HK&is_targeted_country=false&media_type=all&search_type=keyword&q=ROKA",
+        "ad_count_active": "0",
+        "objective_path_hint": "unknown",
+        "objective_reason": "Insufficient signals in parsed fields; needs manual verification from Ad Library card.",
+        "message_destination_hint": "unknown"
+      }
+    ],
     "type_distribution": {
-      "click_to_message": 2,
+      "click_to_message": 1,
       "lead_form": 0,
-      "website": 9,
-      "unknown": 0
+      "website": 8,
+      "unknown": 2
     },
     "top_tags": [
-      {
-        "label": "上手快",
-        "count": 1,
-        "competitor_name": "Caterlord"
-      },
       {
         "label": "网站引流",
         "count": 1,
         "competitor_name": "Caterlord"
       },
       {
-        "label": "私信咨询",
+        "label": "网站引流",
         "count": 1,
         "competitor_name": "DimPOS"
       },
@@ -132,22 +128,22 @@
         "competitor_name": "DoLA"
       },
       {
-        "label": "促销优惠",
+        "label": "网站引流",
         "count": 1,
         "competitor_name": "Eats365"
       },
       {
-        "label": "私信咨询",
-        "count": 1,
-        "competitor_name": "Eats365"
-      },
-      {
-        "label": "私信咨询",
+        "label": "上手快",
         "count": 1,
         "competitor_name": "ezPOS"
       },
       {
         "label": "网站引流",
+        "count": 1,
+        "competitor_name": "ezPOS"
+      },
+      {
+        "label": "待人工判定",
         "count": 1,
         "competitor_name": "Gingersoft"
       },
@@ -167,17 +163,12 @@
         "competitor_name": "Loyverse"
       },
       {
-        "label": "提升效率",
+        "label": "私信咨询",
         "count": 1,
         "competitor_name": "OmniWe"
       },
       {
-        "label": "网站引流",
-        "count": 1,
-        "competitor_name": "OmniWe"
-      },
-      {
-        "label": "网站引流",
+        "label": "待人工判定",
         "count": 1,
         "competitor_name": "ROKA"
       }
